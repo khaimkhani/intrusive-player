@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "intrusive",
+  "version": "1.0",
+
+  "description": "Play your videos in a little box on any tab",
+  "icons": {
+  },
+
+  "permissions": ["<all_urls>", "activeTab", "tabs", "scripting", "webNavigation"],
+
+  "browser_action": {
+    "default_title": "intrusive",
+  },
+
+  "background": {
+    // put this in an html file to enable modules
+    "scripts": ["playerState.js","bg.js"]
+  }
+
+}
